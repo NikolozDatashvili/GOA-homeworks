@@ -1,0 +1,32 @@
+
+.text {
+  font-size: 25px;
+}
+.page_heading {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.other_pages {
+  font-size: 30px;
+  text-decoration: none;
+}
+.other_pages:hover {
+  text-decoration: underline;
+}
+.contacts {
+  font-size: 20px;
+}
+.links {
+  text-decoration: none;
+}
+.links:hover {
+  text-decoration: underline;
+}
+.box-size {
+  width: fit-content;
+}
+.image{
+  object-fit: contain;
+  
+}
