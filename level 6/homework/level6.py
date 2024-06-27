@@ -30,52 +30,58 @@
 # <> exercise # 3 
 # <> user information program
 
-name = input("Please enter your name: ")
-def valid_name():
+# def valid_name():
+#     while True:
+#         name = input("Please enter your name: ")  
+#         if name and name[0].isupper():
+#             print(f"Your name is, {name}!")
+#             break
+#         else:
+#             print("Invalid input, name should start with a capital letter.")
+
+# valid_name()
+
+
+# def valid_surname():
+#     while True:
+#         surname = input("Enter your surname: ")
+#         if surname and surname[0].isupper():
+#             print(f"Your surname is, {surname}!")
+#             break
+#         else:
+#             print("Invalid input, surname should start with a capital letter.")
+
+# valid_surname()
+def valid_age():
     while True:
-        
-        if name and name[0].isupper():
-            print(F"Your name is, {name}!")
-            break
-        else:
-            print("Invalid input, name should start with a capital letter.")
+        user_input = input("Enter your age: ")
+        try:
+            age = int(user_input)
+            if age < 0:
+                print("Invalid input, age cannot be negative.")
+            else:
+                print(f"Your age is {age}.")
+                break
+        except ValueError:
+            print("Invalid input, please enter a valid integer for age.")
 
+valid_age()
 
-surname = input("Ener your surname: ")
-def valid_surname():
-    while True:
-        
-        if surname and surname[0].upper():
-            print(F"Your surname is, {surname}!")
-            break
-        else:
-            print("Invalid input, name should start with a capital letter.")
-
-
-
-
-age = int(input("Enter your age: "))
-
-gmail = input("Enter your gmail: ")
-def valid_gmail():
-    while True:
-        
-        if "gmail.com" in gmail:
-            print(F"Your gmail is, {gmail}!")
-            break
-        else: 
-            print("Gmail is not valid")
+# def valid_gmail():
+#     while True:
+#         gmail = input("Enter your gmail: ")
+#         if "gmail.com" in gmail:
+#             print(F"Your gmail is, {gmail}!")
+#             break
+#         else: 
+#             print("Gmail is not valid")
             
-          
-            
+# valid_gmail()
 
 
 address = input("Enter your address: ")
 
 
-
-print(F"Your name is {name}", "\n" F"Your surname is {surname}", "\n" 
-      F"Your age is {age}", "\n" F"Your address is {address}" "\n" F"Your gmail is {gmail}")
 
 
 
