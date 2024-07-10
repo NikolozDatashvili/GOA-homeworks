@@ -1,0 +1,64 @@
+<!-- <> Drop down menu <> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="email" placeholder="Enter email*" required /><br />
+      <input type="text" placeholder="Enter your name*" required /><br />
+      <input type="password" placeholder="Enter password*" required /><br />
+      <label for="Hobby">Tell me about your Hobby</label>
+      <input type="text" name="Hobby" id="Hobby" placeholder="Hobby" /> <br />
+
+      <select name="countries">
+        <option value="Geo">Georgia</option>
+        <option value="Ita">Italy</option>
+        <option value="Spa">Spain</option>
+        <option value="Ger">Germany</option>
+        <option value="Swi">Switzerland</option></select
+      ><br />
+      <input type="submit" />
+      <!-- <> Video element with controls and width attribute -->
+      <video controls width="500px">
+        <!-- // 'controls' attribute adds playback controls to the video (play, pause, etc.) -->
+        <!-- / 'width' attribute sets the width of the video player to 500 pixels -->
+
+        <!-- | Source for the video file in mp4 format with type attribute -->
+        <source src="Desktop 2024.06.30 - 15.54.50.01.mp4" type="video/mp4" />
+        <!-- \ 'src' attribute specifies the path to the video file -->
+        <!-- * 'type' attribute specifies the type of the video file -->
+
+        <!-- ! Source for the video file in webm format with type attribute -->
+        <source src="Desktop 2024.06.30 - 15.54.50.01.mp4" type="video/webm" />
+        <!-- // 'src' attribute specifies the path to the video file -->
+        <!-- / 'type' attribute specifies the type of the video file -->
+
+        <!-- <> Fallback text if the video format is not supported -->
+        Video not supported
+        <!-- \ Text displayed if the browser does not support the video element or formats -->
+      </video>
+      <br />
+
+      <!-- ! Audio element with controls attribute -->
+      <audio controls>
+        <!-- // 'controls' attribute adds playback controls to the audio (play, pause, etc.) -->
+
+        <!-- / Source for the audio file in mp3 format with type attribute -->
+        <source
+          src="Metro Boomin, Future - Too Many Nights (Visualizer) ft. Don Toliver.mp3"
+          type="audio/mp3"
+        />
+        <!-- \ 'src' attribute specifies the path to the audio file -->
+        <!-- | 'type' attribute specifies the type of the audio file -->
+
+        <!-- // Fallback text if the audio format is not supported -->
+        Your browser does not support the audio element.
+        <!-- ! Text displayed if the browser does not support the audio element or formats -->
+      </audio>
+    </form>
+  </body>
+</html>
