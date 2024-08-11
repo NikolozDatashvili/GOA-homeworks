@@ -1,0 +1,124 @@
+/* // ticket button style \\ */
+.tickets {
+  background-color: rgb(217, 255, 0);
+  display: inline-block;
+
+  height: 35px;
+  border: none;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+
+  color: white;
+  margin-top: 1px;
+  user-select: none;
+}
+/* // ticket button style while hovering \\ */
+.tickets:hover {
+  opacity: 0.7;
+  background-color: black;
+  transition: 0, 8s;
+}
+/* // ticket button style while clicking \\ */
+.tickets:active {
+  opacity: 0.4;
+}
+
+/* | facebook page button style | */
+.facebook {
+  display: inline-block;
+  padding: 8px 15px;
+  color: blue;
+  background-color: white;
+  border: 2px solid blue;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.facebook:hover {
+  background-color: blue;
+  color: white;
+}
+.facebook:active {
+  opacity: 0.6;
+}
+
+.maps {
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgb(18, 190, 2);
+  height: 35px;
+  width: 75px;
+  border-radius: 18px;
+  font-weight: bold;
+  color: white;
+  margin-top: 2px;
+  border: none;
+  user-select: none;
+}
+
+.maps:hover {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.maps:active {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* <> navigation bar style <> */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 25px -10px;
+}
+/* <> unordered list style in nav bar <> */
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 10px;
+}
+/* <> list style in unordered list which is in nav bar <> */
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.aside {
+  color: rgb(23, 0, 151);
+  font-size: 20px;
+}
+.diff_article {
+  color: rgb(0, 177, 0);
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* <> Signin button <> */
+.sign {
+  background-color: rgb(235, 0, 0);
+  display: inline-block;
+
+  height: 35px;
+  border: none;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  color: white;
+}
+/* /> Homepage button <\ */
+.home {
+  background-color: rgb(235, 0, 0);
+  display: inline-block;
+
+  height: 35px;
+  border: none;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  color: white;
+}

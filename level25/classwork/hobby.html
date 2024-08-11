@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: rgb(0, 0, 255);
+        text-align: center;
+        user-select: none;
+        font-weight: bolder;
+      }
+      p {
+        text-align: center;
+        color: rgb(129, 13, 13);
+        font-size: larger;
+      }
+      nav ul {
+        display: flex;
+      }
+
+      li {
+        list-style-type: none;
+      }
+      .b1 {
+        padding: 15px;
+        display: inline-block;
+        background-color: rgb(129, 13, 13);
+        color: blue;
+        border: none;
+      }
+      .b1:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .b1:active {
+        opacity: 0.6;
+      }
+      .b3 {
+        padding: 15px;
+        display: inline-block;
+        background-color: #810d0d;
+        color: #0000ff;
+        border: none;
+      }
+      .b3:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .b3:active {
+        opacity: 0.6;
+      }
+      h2 {
+        color: #949400;
+        text-align: center;
+        user-select: none;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <button
+            class="b1"
+            type="button"
+            onclick="window.open('https://github.com/NikadataPep/GOA-homeworks')"
+          >
+            Github
+          </button>
+        </li>
+        <li>
+          <button class="b3" type="button" onclick="window.open('index.html')">
+            Home
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <header><h1>MY Hobbies</h1></header>
+    <main>
+      <h2>Football</h2>
+      <img src="images/image.png" alt="Football photo" />
+      <p>
+        Football is my favourite sport and goalkeeping is my hobby<br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quam quia
+        eius aspernatur adipisci doloribus consequuntur necessitatibus natus
+        magnam rerum.
+      </p>
+    </main>
+  </body>
+</html>
