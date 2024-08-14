@@ -74,6 +74,9 @@
   list-style-type: none;
   padding: 0;
   margin: 25px -10px;
+  width: 100%;
+
+  background-color: gray;
 }
 /* <> unordered list style in nav bar <> */
 .navbar ul {

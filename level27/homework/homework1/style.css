@@ -1,0 +1,42 @@
+.div1 {
+  background-color: blue;
+
+  padding: 2%;
+}
+.p1 {
+  color: white;
+  font-size: 170%;
+  text-align: left;
+  text-decoration: line-through;
+}
+.p2 {
+  color: yellow;
+  font-size: 200%;
+  text-align: center;
+  text-decoration: dotted;
+}
+.p3 {
+  text-align: right;
+  color: rgb(1, 206, 1);
+  font-size: 170%;
+}
+.div2 {
+  padding: 2%;
+  background-color: chartreuse;
+}
+.p4 {
+  color: rgb(0, 0, 255);
+  font-size: 185%;
+  text-align: left;
+  text-decoration: none;
+}
+.p5 {
+  color: brown;
+  font-size: 150%;
+  text-align: center;
+}
+.p6 {
+  text-align: right;
+  color: rgb(206, 1, 179);
+  font-size: 200%;
+}
