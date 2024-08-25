@@ -1,0 +1,145 @@
+/* <> Stying table <> */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 90px;
+}
+/* // Styling the header cells (th elements) // */
+table th {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+/* / Styling the data cells (td elements)  / */
+table td {
+  padding: 15px;
+  text-align: left;
+}
+/* | adjusting width of columns | */
+table td:nth-child(2),
+table th:nth-child(2),
+table td:nth-child(3),
+table th:nth-child(3) {
+  width: 15%;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+  width: 30%;
+}
+
+table th:nth-child(4),
+table td:nth-child(4),
+table th:nth-child(5),
+table td:nth-child(5) {
+  width: 20%;
+}
+/* Styling for even and odd rows */
+table tr:nth-child(odd) {
+  background-color: rgb(1, 1, 126);
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: silver;
+  color: darkblue;
+}
+
+/* Styling for row hover effect */
+table tr:hover:nth-child(odd) {
+  background-color: rgb(3, 3, 150);
+  cursor: pointer;
+}
+table tr:hover:nth-child(even) {
+  background-color: rgb(167, 167, 167);
+  cursor: pointer;
+}
+/* | adjusting body | */
+body {
+  background-color: #0a0a52;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+/* - styling a href -*/
+a {
+  text-decoration: none;
+  list-style: none;
+}
+/* <> styling NAVBAR <>  */
+/* // styiling unordered list // */
+ul {
+  list-style: none;
+}
+li {
+  padding: 20px;
+  font-size: x-large;
+}
+/* // styiling nav tag // */
+nav {
+  background-color: silver;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0; /* / top and left is for navbar to reach top / */
+  left: 0;
+}
+
+html body {
+  margin: 0; /* / top and left is for navbar to reach top / */
+  left: 0;
+  padding: 0;
+}
+/* * styling header tag * */
+header {
+  background-color: #0a0a52; /* Dark Blue */
+  padding: 20px;
+
+  border-bottom: 2px solid #c0c0c0; /* Silver */
+}
+/* * styling header and h1 tags * */
+header h1 {
+  color: silver;
+  text-align: center;
+  margin-top: 65px;
+  padding-top: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+/* ! styling a href in lists ! */
+nav ul li a {
+  color: #0a0a52;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 50px;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+div ul {
+  text-align: center;
+}
+div ol {
+  list-style-position: inside;
+}
+div ul,
+div ol {
+  display: inline-block;
+}
+.ol1 {
+  list-style-type: lower-roman;
+}
+.ul1 {
+  list-style-type: lower-alpha;
+}
+
+.ul2 {
+  list-style-type: georgian;
+}

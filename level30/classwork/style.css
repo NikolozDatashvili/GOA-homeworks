@@ -1,0 +1,6 @@
+/*  <> box model არის ყუთი რომელიც 
+<> ყველა html-ის ელემენტს აქვს გარშემო<>  */
+.parent {
+  display: flex;
+  justify-content: space-between;
+}
