@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div><h1>General Information</h1></div>
+
+      <div class="divH2"><h2>Contact Details</h2></div>
+    </header>
+    <main>
+      <div>
+        <form class="form">
+          <select name="title" id="title" required>
+            <option value="Title" disabled selected>Title</option>
+            <option value="Mr." id="title">Mr.</option>
+            <option value="Ms." id="title">Ms.</option>
+            <option value="Mrs." id="title">Mrs.</option>
+          </select>
+
+          <div class="names">
+            <label for="firstname"></label>
+            <input
+              class="firstN"
+              type="text"
+              id="firstname"
+              placeholder="Firstname"
+              required
+            />
+            <label for="lastname"></label>
+            <input
+              class="lastN"
+              type="text"
+              id="lastname"
+              placeholder="Lastname"
+              required
+            />
+          </div>
+          <select name="position" id="position" required>
+            <option value="" disabled selected>Position</option>
+            <option id="position">Manager</option>
+
+            <option id="position">Marketer</option>
+            <option id="position">Programmer</option>
+          </select>
+          <label for="company"></label>
+          <input
+            class="company"
+            type="text"
+            id="company"
+            placeholder="Company"
+            required
+          />
+          <div class="last2">
+            <label for="arena"></label>
+            <input
+              class="arena"
+              placeholder="Business Arena"
+              type="text"
+              id="arena"
+            />
+            <select class="employees" name="employees" id="employees">
+              <option value="employees" disabled selected>employees</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="form2">
+        <form>
+          <div>
+            <label for="street"></label>
+            <input id="street" type="text" placeholder="Streen + Nr" />
+            <label for="addInfo"></label>
+            <input type="text" id="addInfo" placeholder="Additional Info" />
+          </div>
+          <div class="zipPlace">
+            <label for="zipcode"></label
+            ><input
+              class="zipcode"
+              type="number"
+              placeholder="Zip code"
+              required
+            />
+            <select class="place" name="place" id="place" required>
+              <option value="Place" disabled selected>Place</option>
+              <option value="Town">Town</option>
+              <option value="City">City</option>
+              <option value="Village">Village</option>
+            </select>
+          </div>
+          <div>
+            <select class="Country" name="Country" id="Country">
+              <option value="Country" disabled selected>Country</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Georgia">Spain</option>
+              <option value="Georgia">Germany</option>
+            </select>
+          </div>
+
+          <div class="phoneNum">
+            <label for="code"></label>
+            <input
+              class="code"
+              id="code"
+              type="number"
+              placeholder="Code*"
+              required
+            />
+            <label for="phoneNum"></label>
+            <input
+              class="telnum"
+              type="number"
+              placeholder="Phone number"
+              required
+            />
+          </div>
+          <div class="divEmail">
+            <label for="email"></label>
+            <input
+              type="email"
+              class="email"
+              placeholder="Email"
+              id="email"
+              required
+            />
+          </div>
+          <div>
+            <label class="checkbox-container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              I do accept terms and conditions
+            </label>
+          </div>
+          <div class="divSubmit">
+            <button type="submit" class="submit">Register Badge</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

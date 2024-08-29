@@ -1,0 +1,302 @@
+header h1 {
+  color: blue;
+  margin-left: 7%;
+  margin-top: 50px;
+  font-size: 50px;
+  width: 500px;
+}
+h2 {
+  margin-top: 50px;
+  font-size: 50px;
+  margin-left: -200px;
+}
+.divH2 {
+  color: white;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  margin-left: 119px;
+
+  width: 60%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main {
+  display: flex;
+  margin-left: 5%;
+  gap: 10px;
+}
+body main div {
+  width: 50%;
+  height: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: -30px;
+}
+.form .names {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100%;
+}
+
+.firstN {
+  width: 41.5%;
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+.firstN:focus {
+  outline: none;
+}
+.lastN {
+  width: 41.5%;
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-left: 60px;
+}
+.lastN:focus {
+  outline: none;
+}
+
+.company {
+  width: 90%;
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-top: -50px;
+}
+
+.company:focus {
+  outline: none;
+}
+.form select {
+  width: 95%;
+  background-color: transparent;
+  font-size: 22px;
+  color: darkgray;
+}
+select {
+  appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+
+  background-image: url("images/Arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 0.1rem top 50%;
+  background-size: 30px auto;
+}
+
+select:focus {
+  appearance: none;
+  outline: none;
+}
+option:focus {
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.employees {
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-left: 60px;
+}
+.form .employees {
+  width: 39%;
+}
+.arena {
+  width: 42%;
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+.arena:focus {
+  outline: none;
+}
+.last2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100%;
+}
+.form2 {
+  background-color: blue;
+  margin-left: -35px;
+  width: 56%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form2 input {
+  color: white;
+  margin-top: 0px;
+
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: #0000ff;
+}
+.form2 select {
+  background-image: url("images/imageArrow.jpg");
+  background-repeat: no-repeat;
+  background-position: right 0.2rem top 50%;
+  background-size: 30px auto;
+  color: white;
+}
+.form2 option {
+  color: white;
+  background-color: blue;
+}
+.form2 input::placeholder {
+  color: white;
+}
+.form2 input:focus {
+  outline: none;
+}
+.form2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  width: 90%;
+}
+
+.place {
+  background-color: transparent;
+  font-size: 22px;
+  color: white;
+  width: 48%;
+  margin-left: 25px;
+}
+form .zipcode {
+  width: 45%;
+}
+form .zipPlace {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: -25px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form2 .Country {
+  appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+  width: 85%;
+  font-size: 22px;
+  background-color: transparent;
+  color: white;
+  background-image: url("images/imageArrow.jpg");
+  background-repeat: no-repeat;
+  background-position: right 0.2rem top 50%;
+
+  background-size: 30px auto;
+}
+.Country {
+  margin-top: 45px;
+}
+.form2 .phoneNum {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.code {
+  margin-left: -20px;
+}
+.divEmail {
+  padding-bottom: 40px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+div .checkbox-container {
+  padding-bottom: 40px;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom checkbox style */
+.checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+}
+
+/* Checkmark indicator */
+.checkbox-container input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Checkbox on hover */
+.checkbox-container:hover input[type="checkbox"] + .checkmark {
+  background-color: #888;
+}
+
+/* Checkbox when checked */
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background-color: blue;
+}
+.submit {
+  width: 180px;
+  border-radius: 40px;
+  padding: 1px;
+  font-size: 22px;
+  border: none;
+}
+.divSubmit {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.submit:hover {
+  color: white;
+  background-color: blue;
+}
