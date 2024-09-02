@@ -1,0 +1,51 @@
+div {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+div:nth-child(2) {
+  position: relative;
+  top: 50px; /* / დავაშორეთ ზევიდან 50 პიქსელით */
+  left: 300px; /* / დავაშორეთ მარცხნიდან 300 პიქსელით */
+  background-color: yellow; /* <> ფონის ფერი ყვითელი */
+  color: black;
+}
+body {
+  background-color: burlywood;
+}
+button {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(83, 83, 83);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1000px;
+  left: 1000px;
+}
+
+span {
+  position: relative;
+  top: -40px; /* Adjusted to position the alert message */
+  right: -35px; /* Adjusted to position the alert message */
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  border: white solid 7px;
+}
