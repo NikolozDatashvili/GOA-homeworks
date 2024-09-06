@@ -1,0 +1,47 @@
+.outerBar {
+  background-color: blue;
+  width: 20%;
+  height: 80px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  top: 400px;
+  left: 40%;
+}
+
+.innerBar {
+  height: 100%;
+  width: 0;
+  background-color: navy;
+  border-radius: 10px;
+  animation: loading 5s forwards linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.par {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}

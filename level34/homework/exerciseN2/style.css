@@ -1,0 +1,36 @@
+div {
+  background-color: blue;
+  width: 100px;
+  animation: boxAnim 6s infinite;
+  height: 100px;
+  animation-delay: 5s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+@keyframes boxAnim {
+  0% {
+    transform: scale(1);
+    background-color: blue;
+  }
+  25% {
+    transform: scale(2) rotate(90deg);
+    background-color: darkblue;
+  }
+  50% {
+    transform: scale(3) rotate(180deg);
+    background-color: rgb(65, 0, 65);
+  }
+  75% {
+    transform: scale(4) rotate(270deg);
+    background-color: purple;
+  }
+  100% {
+    transform: scale(5) rotate(360deg);
+    background-color: darkmagenta;
+  }
+}

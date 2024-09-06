@@ -1,0 +1,23 @@
+.box {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  animation: boxTransform 5s 3;
+  animation-delay: 2s;
+}
+body {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+}
+@keyframes boxTransform {
+  50% {
+    background-color: green;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    background-color: yellow;
+  }
+}
