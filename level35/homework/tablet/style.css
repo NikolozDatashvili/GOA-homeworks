@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  height: 800px;
+  width: 800px;
+  font-size: 40px;
+}
+
+/* Layout sections */
+.header {
+  grid-column: 1 / span 3;
+  background-color: rgb(1, 43, 75);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  grid-column: 1 / span 3;
+  background-color: rgb(20, 102, 165);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  grid-column: 1 / 2;
+  grid-row: 3 / span 3;
+  background-color: rgb(173, 22, 32);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  grid-column: 2 / span 2;
+  background-color: rgb(1, 57, 100);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  grid-column: 2 / span 2;
+  background-color: rgb(208, 208, 0);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.extra {
+  grid-column: 2 / 3;
+  background-color: rgb(33, 179, 33);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  grid-column: 3 / 4;
+  background-color: rgb(101, 242, 152);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
