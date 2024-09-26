@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <> exercise N1 -->
+    <p id="p1">I Love Javasript</p>
+    <!-- // exercise N2 -->
+    <h1 id="h1">Hello Javasript!</h1>
+    <!-- / exercise N3 -->
+    <h2 id="h2"></h2>
+    <script>
+      //  exercise N1
+      let text = document.getElementById("p1").textContent;
+      console.log(text);
+      // exercise N2
+      let header = (document.getElementById("h1").textContent =
+        "Love learning Javasript!");
+      console.log(header);
+      // exersse N3
+      document.getElementById("h2").textContent = "Javascript is awesome!";
+    </script>
+  </body>
+</html>
