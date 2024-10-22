@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Input</title>
+    <style>
+      body {
+        background-color: #b2beb5;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 20px;
+        position: relative;
+
+        background-color: #228b22;
+      }
+      button {
+        width: 224px;
+        font-size: 50px;
+        background-color: darkgreen;
+        border: none;
+      }
+
+      button:hover {
+        cursor: pointer;
+        border: solid 2px #b2beb5;
+      }
+      #displayNum {
+        font-size: 100px;
+      }
+      #userInput {
+        width: 500px;
+
+        font-size: 70px;
+        background-color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="name"></p>
+    <div>
+      <p id="displayNum">0</p>
+      <label for="user"></label>
+      <input type="number" id="userInput" />
+
+      <div class="buttons">
+        <button onclick="adder()">+</button>
+        <button onclick="substracter()">-</button>
+        <button onclick="multiplier()">*</button>
+        <button onclick="clearNum()">AC</button>
+        <button onclick="divider()">/</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
