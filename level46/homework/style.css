@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(84, 153, 153);
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  position: relative;
+
+  background-color: rgb(0, 97, 97);
+}
+button {
+  width: 224px;
+  font-size: 50px;
+  background-color: teal;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border: solid 2px #b2beb5;
+}
+#displayNum {
+  font-size: 100px;
+}
+#userInput {
+  width: 500px;
+
+  font-size: 70px;
+  background-color: white;
+  border: none;
+}

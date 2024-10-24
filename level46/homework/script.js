@@ -5,9 +5,8 @@ let name1 = document.getElementById("name");
 /// შემოიტანოს საკუთარი სახელი
 let userInput = prompt("Please enter your name: ");
 
-//// მომხმარებლის შემოტანილ სახელს(ტექსტს) ვბეჭდავ
+//// მომხმარებლის შემოტანილ სახელს(ტექსტს) გამომაქვს გვერდის მარჯვენა ზედა კუთხეში
 name1.textContent = userInput;
-//// გვერდის მარჯვენა ზედა კუთხეში
 name1.style.textAlign = "right";
 
 //// ფონტის ზომა 100px
@@ -23,7 +22,7 @@ function adder() {
   let inputNumber = document.getElementById("userInput").value;
   //<> მიმდინარე ნაჩვენებ რიცხვს დაკლიკებისას დაემატება შემოტანილი რიცხვი
   currentNum += Number(inputNumber);
-  /// მივწვდი იმ ელემნტს რომელიც გვერდზე ბეჭდავს რეზულტატებს
+  /// მივწვდი იმ ელემნტს რომელიც გვერდზე გამომაქვს რეზულტატებს
   /// როგორც კი რომელიმე ღილაკზე დავაკლიკებთ იმ წამსვე ახალ რეზულტატს გვაჩვენებს
   document.getElementById("displayNum").innerText = currentNum;
 }
@@ -51,7 +50,7 @@ function divider() {
 
   document.getElementById("displayNum").innerText = currentNum;
 }
-//// clearNum ფუნქცია აბრუნებს 0-ს და შლის ყველაფერ userInput-დან
+//// clearNum ფუნქცია აბრუნებს 0-ს და შლის ყველაფერს userInput-დან
 function clearNum() {
   currentNum = 0;
   document.getElementById("displayNum").innerText = currentNum;
