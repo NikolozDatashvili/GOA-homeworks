@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: radial-gradient(#d95362, #c0d6e7, #2d3464);
+        display: grid;
+        place-items: center;
+        user-select: none;
+      }
+
+      .wrapper {
+        height: 300px;
+        width: 400px;
+        background: repeating-linear-gradient(
+            90deg,
+            #d95362 0 16px,
+            #0000 0 26px
+          )
+          50% 75%/120px 180px no-repeat#2D3464;
+      }
+
+      .parent,
+      p {
+        background: #c0d6e7;
+        margin: 90px 140px;
+      }
+
+      .parent {
+        padding: 20px;
+        height: 80px;
+      }
+
+      p {
+        position: absolute;
+        padding: 40px 80px;
+        border-radius: 1in;
+        margin: 0 -40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="parent">
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

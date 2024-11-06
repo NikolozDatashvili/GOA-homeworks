@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgb(110, 28, 28);
+}
+
+.square {
+  width: 200px;
+  aspect-ratio: 1;
+  background-color: teal;
+}
+.circle {
+  border-radius: 50%;
+  background-color: #2d8f4e;
+  width: 200px;
+  aspect-ratio: 1;
+}
+.rectangle {
+  width: 300px;
+  aspect-ratio: 2/1;
+  background-color: #50c878;
+}
+.triangle {
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 140px solid rgb(146, 146, 0);
+}
+.pentagon {
+  width: 140px;
+  border-top: 140px solid aqua;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+}
+.pentagon::before {
+  content: "";
+  position: absolute;
+  border-bottom: 140px solid aqua;
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  top: 10px;
+}
