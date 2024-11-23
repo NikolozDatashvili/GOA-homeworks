@@ -22,8 +22,8 @@ console.log(countAreaCircle2(5));
 //<> are of triangle (სამკუთხედი)
 
 function countAreaTri(a, b, c) {
-  //// თუ if-ში მოცემული ყველა პრიობა დაკმაყოფილდება მაშინ
-  //// ფუნქცია გამოიყენებს ჰერონის ფორმულა ფართობის გამოსათვლელად
+  //// თუ if-ში მოცემული ყველა პირობა დაკმაყოფილდება, მაშინ
+  //// ფუნქცია გამოიყენებს ჰერონის ფორმულას, ფართობის გამოსათვლელად
   if (a + b > c && a + c > b && b + c > a) {
     let s = (a + b + c) / 2;
 
@@ -31,7 +31,9 @@ function countAreaTri(a, b, c) {
     let area = Math.sqrt(s * (s - a) * (s - b) * (s - c)); /// ჰერონის ფორმულა
     return "Triangle area is: " + area;
   } else {
-    return "Invalid triangle sides"; // Return error message if sides do not form a valid triangle
+    //// თუ მოცემული გვერდებით სამკუთხედი არ შეიკვრება
+    //// გამოიტანს შემდეგ ტექსტს
+    return "Invalid triangle sides";
   }
 }
 console.log(countAreaTri(10, 9, 8));

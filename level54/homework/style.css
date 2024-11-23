@@ -1,0 +1,50 @@
+body {
+  background-color: #252a34;
+  color: white;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25vh;
+}
+input,
+label {
+  margin: 2vh;
+  font-size: 25px;
+}
+
+input {
+  padding: 10px;
+  border: solid #e90a7d;
+  background-color: #252a34;
+  outline: none;
+  color: white;
+}
+input::-webkit-inner-spin-button,
+#noArrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+p {
+  font-size: 25px;
+}
+
+button {
+  font-size: 25px;
+
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 30px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #e90a7d, #6b026e);
+  background-size: 100% 200%; /* Expand gradient for animation */
+  background-position: top; /* Initial position */
+
+  transition: background-position 0.5s ease;
+}
+button:hover {
+  background-position: bottom;
+}
