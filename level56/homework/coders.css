@@ -1,0 +1,78 @@
+body {
+  background-color: #008080;
+  font-size: 25px;
+  color: cornsilk;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10vh;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+p {
+  width: 50vw;
+}
+a {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 35px;
+  margin: 0;
+  background: linear-gradient(to right, #6f5345, cornsilk);
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 0.5s ease-in-out, color 0.5s;
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+a:hover {
+  background-position: right;
+  color: rgb(0, 83, 83);
+}
+a:active {
+  background-position: left;
+  color: cornsilk;
+  transition: none;
+}
+#radTxt1,
+#radTxt2,
+#radTxt3 {
+  background-color: cornsilk;
+  color: teal;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+
+  transition: 2s;
+}
+label {
+  cursor: pointer;
+  padding: 20px;
+}
+input[type="radio"] {
+  appearance: none;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+
+  margin: 10px;
+  background-color: #6f5345;
+
+  cursor: pointer;
+  border: 2px solid #6f5345;
+}
+input[type="radio"]:checked {
+  background-color: #d5997e;
+  border-color: #d5997e;
+}
+
+input[type="radio"]:hover {
+  border: 2px solid teal;
+  transform: scale(1.5);
+}
