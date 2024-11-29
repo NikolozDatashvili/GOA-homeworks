@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1">Classwork</p>
+    <img id="myImg" src="porsche.png" alt="Photo is not available" />
+    <button onclick="porsche()">Porsche</button>
+    <button onclick="bmw()">BMW</button>
+    <script>
+      let txt1 = document.getElementById("p1");
+      txt1.style.Color = "blue";
+      txt1.textContent = "New Classwork";
+
+      // exercise N2
+      let myImg = document.getElementById("myImg");
+      function bmw() {
+        myImg.src = "bmw.png";
+      }
+      function porsche() {
+        myImg.src = "porsche.png";
+      }
+    </script>
+  </body>
+</html>
