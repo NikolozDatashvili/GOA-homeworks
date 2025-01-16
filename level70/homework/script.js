@@ -1,8 +1,6 @@
 function matrix(rows, cols) {
   let result = [];
 
-  let counter = 1;
-
   //<> გადავუყვეთ რიგებს
   for (let i = 0; i < rows; i++) {
     //// რიგების მასივი
@@ -10,8 +8,7 @@ function matrix(rows, cols) {
     /// გადავუყვეთ სვეტებს
     for (let j = 0; j < cols; j++) {
       //| დავუმატოთ ახლანდელი counter-ის მნიშვნელობა რიგს
-      row.push(counter);
-      counter++;
+      row.push(i * cols + j);
     }
     //\ დავამატოთ რიგი საბოლოო მასივში
     result.push(row);
@@ -20,4 +17,4 @@ function matrix(rows, cols) {
   return result;
 }
 
-console.log(matrix(4, 6));
+console.log(matrix(34, 1));
