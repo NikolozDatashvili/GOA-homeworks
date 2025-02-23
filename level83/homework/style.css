@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Bungee+Shade&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+p {
+  font-size: 10vw;
+}
+body {
+  font-family: "Bungee Shade", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252a34;
+  color: #ff2e63;
+  gap: 4vw;
+}
