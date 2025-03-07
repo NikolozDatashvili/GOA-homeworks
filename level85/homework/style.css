@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 90vh;
+  row-gap: 15vh;
+  background-color: #dfe0df;
+  color: #674833;
+}
+h1 {
+  font-size: 5vh;
+}
+main {
+  margin-top: -6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  gap: 3vw;
+}
+p {
+  width: 30vw;
+  font-size: 1.5vw;
+}
+button {
+  font-size: 1.8vw;
+  border-radius: 30px;
+  background-color: #805a40;
+  color: white;
+  border: none;
+  text-align: center;
+  width: 10vw;
+  height: 6vh;
+  transition: transform 0.6s;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 7px 0px #000000;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 2vw;
+}
+#bmwM3 {
+  display: none;
+}
+#lexus {
+  width: 25vw;
+}
+#bmwM5 {
+  display: none;
+}
