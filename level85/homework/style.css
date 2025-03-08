@@ -5,19 +5,27 @@ body {
 
   align-items: center;
   height: 90vh;
-  row-gap: 15vh;
+  row-gap: 8vh;
   background-color: #dfe0df;
   color: #674833;
 }
 h1 {
   font-size: 5vh;
 }
-main {
-  margin-top: -6vh;
+h2 {
+  font-size: 3vh;
+}
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3vw;
+  justify-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
 }
 .hero {
   display: flex;
@@ -57,9 +65,16 @@ button:hover {
 #bmwM3 {
   display: none;
 }
-#lexus {
+img {
   width: 25vw;
 }
 #bmwM5 {
+  display: none;
+}
+
+#bmwM5Txt {
+  display: none;
+}
+#bmwM3Txt {
   display: none;
 }
