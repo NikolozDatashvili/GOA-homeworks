@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 4vh 0px 0px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1vw;
+        height: 90vh;
+        background-color: #151922;
+      }
+      section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+      }
+      div {
+        transition: transform 0.6s;
+      }
+      div:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="first"></section>
+    <section id="second"></section>
+    <section id="third"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

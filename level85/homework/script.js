@@ -11,7 +11,7 @@ let lexusRc = document.getElementById("lexus");
 /// ზოგადად ღილაკები (სტილის შესაცვლელად)
 let buttons = document.getElementsByTagName("button");
 //| სათაური
-let title = document.getElementById("h2");
+let title = document.getElementsByClassName("h2");
 
 //\ საიტის უკანა ფონი
 let body = document.body;
@@ -31,9 +31,13 @@ graySite.addEventListener("click", function () {
     buttons[i].style.color = "white";
   }
   //// სათაური
-  title.style.display = "Block";
-  title.innerHTML = "LEXUS RC 350F";
+
+  for (let i = 0; i < title.length; i++) {
+    title[i].style.display = "block";
+    title[i].innerHTML = "LEXUS RC 350F";
+  }
   //| სურათები
+
   lexusRc.style.display = "block";
   bmwM3.style.display = "none";
   bmwM5.style.display = "none";
@@ -53,8 +57,11 @@ tealSite.addEventListener("click", function () {
     buttons[i].style.color = "#805a40";
   }
   /// სათაური
-  title.style.display = "Block";
-  title.innerHTML = "BMW F80 M3";
+  for (let i = 0; i < title.length; i++) {
+    title[i].style.display = "block";
+    title[i].innerHTML = "BMW F80 M3";
+  }
+
   //| სურათები
   lexusRc.style.display = "none";
   bmwM3.style.display = "block";
@@ -75,8 +82,11 @@ darkSite.addEventListener("click", function () {
     buttons[i].style.color = "white";
   }
   /// სათაური
-  title.style.display = "Block";
-  title.innerHTML = "BMW F90 M5";
+  for (let i = 0; i < title.length; i++) {
+    title[i].style.display = "block";
+    title[i].innerHTML = "BMW F90 M5";
+  }
+
   //| სურათები
   bmwM5.style.display = "block";
   lexusRc.style.display = "none";
