@@ -102,4 +102,4 @@ function accum(s) {
   }
   return result.slice(0, -1);
 }
-// accum("abcd") -> "A-Bb-Ccc-Dddd"
+
