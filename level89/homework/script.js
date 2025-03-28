@@ -1,10 +1,19 @@
-userInput = prompt("Enter Text here: ");
+let userInput = prompt("Enter Text here: ");
 
 function textReverser(text) {
-  newText = "";
+  let newText = "";
+  let word = "";
 
-  for (let i = text.length - 1; i >= 0; i--) {
-    newText += text[i];
+  for (let i = 0; i <= text.length; i++) {
+    if (i < text.length && text[i] !== " ") {
+      word = text[i] + word;
+    } else {
+      if (newText !== "") {
+        newText += " ";
+      }
+      newText += word;
+      word = "";
+    }
   }
 
   return newText;
