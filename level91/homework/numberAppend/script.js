@@ -50,7 +50,7 @@ submit.addEventListener("click", () => {
 
   box.append(circle);
 
-  if (input.value < 20 && input.value % 2 === 0) {
+  if (input.value < 20) {
     cont.prepend(box);
   } else {
     cont.append(box);
