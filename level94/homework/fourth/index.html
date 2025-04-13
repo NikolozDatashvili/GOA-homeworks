@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 70px;
+        height: 70px;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <p>hello</p>
+      <p>hioi</p>
+      <p>adad</p>
+      <p>aga</p>
+      <p>agagagw</p>
+    </div>
+    <button id="btn">firstChild</button>
+    <script>
+      let btn = document.getElementById("btn");
+      let par = document.getElementById("parent");
+      btn.addEventListener("click", () => {
+        par.firstElementChild.style.color = "red";
+      });
+    </script>
+  </body>
+</html>

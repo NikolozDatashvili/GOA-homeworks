@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent div {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="userInp" type="number" placeholder="Enter number under 20" />
+    <button id="sub">submit</button>
+    <div
+      id="parent"
+      style="display: flex; flex-wrap: wrap; margin-top: 20px"
+    ></div>
+
+    <script>
+      let input = document.getElementById("userInp");
+      let btn = document.getElementById("sub");
+      let parent = document.getElementById("parent");
+
+      let colors = [
+        "red",
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "teal",
+        "brown",
+        "pink",
+        "navy",
+        "maroon",
+        "lime",
+        "indigo",
+        "gray",
+        "gold",
+        "cyan",
+        "magenta",
+        "olive",
+        "crimson",
+        "salmon",
+        "dodgerblue",
+      ];
+
+      btn.addEventListener("click", () => {
+        let count = parseInt(input.value);
+        parent.innerHTML = "";
+
+        if (isNaN(count) || count < 1 || count > 20) {
+          alert("Please enter a number between 1 and 20");
+          return;
+        }
+
+        for (let i = 0; i < count; i++) {
+          let div = document.createElement("div");
+          div.style.backgroundColor = colors[i];
+          parent.appendChild(div);
+        }
+      });
+    </script>
+  </body>
+</html>
