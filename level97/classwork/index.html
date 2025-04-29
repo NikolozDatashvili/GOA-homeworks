@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        font-size: 2vw;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" />
+    <script>
+      let count = 0;
+      let input = document.querySelector("input");
+      input.addEventListener("input", () => {
+        count++;
+      });
+      input.addEventListener("blur", () => {
+        console.log(count);
+        count = 0;
+      });
+    </script>
+  </body>
+</html>
