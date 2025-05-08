@@ -1,6 +1,12 @@
 
+<<<<<<< HEAD
 #<> exercise N1
 #// String ends with?
+=======
+
+#<> exercise N1 
+#//String ends with?
+>>>>>>> d91ccbc3c7202a0b55d7afdeca58defaaaad6a65
 def solution(text, ending):
     text_index = len(text) - len(ending)
 
@@ -11,7 +17,11 @@ def solution(text, ending):
     return True
 
 #<> exercise N2
+<<<<<<< HEAD
 #// Even or Odd - Which is Greater?
+=======
+#// even or odd - which is greater?
+>>>>>>> d91ccbc3c7202a0b55d7afdeca58defaaaad6a65
 def even_or_odd(s):
     evens = 0 
     odds = 0 
@@ -30,6 +40,7 @@ def even_or_odd(s):
         return "Odd is greater than Even"
     else:
         return "Even and Odd are the same"
+<<<<<<< HEAD
     
 
 #<> exercise N3
@@ -39,13 +50,29 @@ def elevator_distance(array):
     distance = 0
     for i in range(1, len(array)):
         #// manually checking if num < 0
+=======
+ 
+#<> exercise N3
+#// Elevator Distance
+#/ without abs()
+def elevator_distance(array):
+    distance = 0
+    for i in range(1, len(array)):
+>>>>>>> d91ccbc3c7202a0b55d7afdeca58defaaaad6a65
         diff = array[i] - array[i - 1]
         if diff < 0:
             distance += -diff
         else:
             distance += diff
     return distance
+<<<<<<< HEAD
 #/ using abs()
+=======
+
+#// Elevator Distance
+#/ with abs()
+
+>>>>>>> d91ccbc3c7202a0b55d7afdeca58defaaaad6a65
 def elevator_distance(array):
     distance = 0
     for i in range(1, len(array)):
@@ -58,6 +85,7 @@ def elevator_distance(array):
 
 def is_solved(board):
     expected = 0
+<<<<<<< HEAD
     #/ გადავუყვეთ რიგებს  
     for row in board:
         #// გადავუყვეთ ციფრებს
@@ -72,6 +100,16 @@ def is_solved(board):
 #<> exercise N5 
 #// Battle of the characters (Easy)
 
+=======
+    for row in board:
+        for tile in row:
+            if tile != expected:
+                return False
+            expected += 1
+    return True
+#<> exercise N5
+#// Battle of the characters (Easy)
+>>>>>>> d91ccbc3c7202a0b55d7afdeca58defaaaad6a65
 def battle(x, y):
     power_x = 0
     for i in range(len(x)):
