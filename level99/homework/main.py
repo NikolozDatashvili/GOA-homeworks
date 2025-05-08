@@ -2,7 +2,8 @@
 #<> exercise N1
 #// Find Count of Most Frequent Item in an Array
 
-
+# Complete the function to find the count of the most frequent item of an array. 
+# You can assume that input is an array of integers. For an empty array return 0
 def most_frequent_item_count(collection):
     if not collection:
         return 0
@@ -22,7 +23,7 @@ def most_frequent_item_count(collection):
             #* ძველ სიხშირეს შეცვლის ახლით
             highest_frequency = count
     return highest_frequency 
-            
+# [3, -1, -1]
         
  
 #<> exercise N2
@@ -32,7 +33,7 @@ def share_price(invested, changes):
         invested += i / 100 * invested
     #/ დააბრუნებს ინვესტირებულ რიცხვს ასეულის სიზუსტით (.2f)
     return f"{invested:.2f}"
-
+# [-50, 50]
 #<> exercise N3
 #// You're a square!
 
@@ -67,7 +68,26 @@ def xo(s):
     for i in string:
         for j in string:
             if i == j and i == "x":
-                x_count +=1
+                x_count += 1
             elif i ==j and i =="o":
-                o_count +=1
+                o_count += 1
     return o_count == x_count
+
+#"xooxx"
+
+#<> მეორე ნაირად
+def xo(s):
+    x_count = 0
+    o_count = 0
+    string = s.lower()
+   
+    for j in string:
+        if  j == "x":
+            x_count += 1
+        elif j =="o":
+            o_count += 1
+    return o_count == x_count
+
+#<> ან 
+def xo(s):
+    return s.lower().count("x") ==s.lower().count("x") 
