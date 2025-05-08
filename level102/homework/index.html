@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Bubbling & Capturing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div id="parent1">
+        <button id="btn1">Button</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="div1">
+        <div id="div2">
+          <div id="div3">Click</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <button id="btn2">Click</button>
+    </div>
+
+    <div class="section">
+      <div id="box1">
+        <div id="box2">Click</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <button id="b1">
+        B1
+        <button id="b2">
+          B2
+          <button id="b3">B3</button>
+        </button>
+      </button>
+    </div>
+
+    <div class="section">
+      <div id="cap1">
+        <div id="cap2">Click</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="capbox">
+        <button id="capbtn">Click</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="c1">
+        <div id="c2">
+          <div id="c3">Click</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="both">Click</div>
+    </div>
+
+    <div class="section">
+      <div id="wrap">
+        <button id="inside">Click</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

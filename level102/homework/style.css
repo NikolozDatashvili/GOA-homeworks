@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+}
+.section {
+  border: 2px dashed #aaa;
+  padding: 10px;
+  margin: 20px 0;
+}
+#parent1 {
+  background: #ffe0e0;
+}
+#btn1 {
+  background: #ffaaaa;
+}
+
+#div1 {
+  background: #e0f7fa;
+}
+#div2 {
+  background: #80deea;
+}
+#div3 {
+  background: #26c6da;
+  color: white;
+}
+
+#btn2 {
+  background: #d1c4e9;
+}
+
+#box1 {
+  background: #dcedc8;
+}
+#box2 {
+  background: #aed581;
+}
+
+#b1 {
+  background: #ffcdd2;
+}
+#b2 {
+  background: #e57373;
+}
+#b3 {
+  background: #c62828;
+  color: white;
+}
+
+#cap1 {
+  background: #c8e6c9;
+}
+#cap2 {
+  background: #81c784;
+}
+
+#capbox {
+  background: #fff9c4;
+}
+#capbtn {
+  background: #fff176;
+}
+
+#c1 {
+  background: #bbdefb;
+}
+#c2 {
+  background: #64b5f6;
+}
+#c3 {
+  background: #1976d2;
+  color: white;
+}
+
+#both {
+  background: #f0f4c3;
+}
+
+#wrap {
+  background: #ffe082;
+}
+#inside {
+  background: #ffca28;
+}
