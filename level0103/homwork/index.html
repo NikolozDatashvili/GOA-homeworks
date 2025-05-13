@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Sliders</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--/ 1. დანაშთის ლოგიკით -->
+    <div class="slider">
+      <h2>1. დანაშთის ლოგიკით</h2>
+      <img id="slider1" src="images/img1.png" />
+      <div class="buttons">
+        <button onclick="prev1()">←</button>
+        <button onclick="next1()">→</button>
+      </div>
+    </div>
+
+    <!--// 2. if ლოგიკით -->
+    <div class="slider">
+      <h2>2. If ლოგიკით</h2>
+      <img id="slider2" src="images/img1.png" />
+      <div class="buttons">
+        <button onclick="prev2()">←</button>
+        <button onclick="next2()">→</button>
+      </div>
+    </div>
+
+    <!--<> 3. პროგრამირების ენები + წარწერები -->
+    <div class="slider">
+      <h2>3. Programming Languages</h2>
+      <img id="slider3" src="images/html.png" />
+      <div class="label" id="label3">HTML</div>
+      <div class="buttons">
+        <button onclick="prev3()">←</button>
+        <button onclick="next3()">→</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
