@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "karla", sans-serif;
+  background-color: brown;
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+}
+.parent {
+  margin-top: 50px;
+
+  width: 900px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px;
+}
+.community {
+  padding: 30px;
+  border-radius: 8px 8px 0 0;
+  color: black;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.last2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(179, 62%, 43%); /* Cyan background */
+  color: white;
+
+  border-radius: 0 0 25px 25px;
+  grid-template-rows: 400px;
+}
+.subtext {
+  color: hsl(218, 22%, 67%);
+}
+p {
+  font-size: 18px;
+}
+.sub-header {
+  font-size: 20px;
+  color: hsl(71, 73%, 54%);
+}
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  padding: 20px;
+
+  color: white;
+
+  border-radius: 0 0 0 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.whyUs {
+  background-color: hsl(218, 22%, 67%); /* Grayish Blue */
+  padding: 20px;
+
+  color: white;
+  text-align: left;
+  border-radius: 0 0 25px 0;
+}
+button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  padding: 15px 30%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 22px;
+}
+button:hover {
+  background-color: hsl(71, 99%, 33%);
+}
+.price {
+  font-size: 50px;
+  color: white;
+}
+.permonth {
+  display: flex;
+  justify-content: center;
+}
+.price-subtext {
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+.whyUs ul {
+  list-style-type: none;
+}
+.whyUs ul li {
+  padding: 10px;
+  color: hsl(204, 43%, 93%);
+}
+h3 {
+  margin-left: 50px;
+}
