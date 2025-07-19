@@ -57,6 +57,7 @@ class User {
   }
 }
 let nika = new User("nika");
+
 console.log(nika.fullName);
 //<> exercise N4
 
@@ -86,7 +87,6 @@ class Account {
 
 let myAcc = new Account(170000);
 console.log(myAcc.balance);
-
 myAcc.balance = 180000;
 
 console.log(myAcc.balance);
