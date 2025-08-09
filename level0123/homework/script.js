@@ -5,8 +5,9 @@ function calculate(a, b, callBack) {
 }
 
 let sum = (x, y) => x + y;
+let substract = (x, y) => x - y;
 let mult = (x, y) => x * y;
-
+let div = (x, y) => x / y;
 console.log(calculate(12, 53, sum));
 console.log(calculate(2, 53, mult));
 
