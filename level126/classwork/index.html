@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      .div1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .block-div {
+        /*// რადგან block default-ია შეგვიძლია არ დავწეროთ */
+        width: 500px;
+        height: 500px;
+        background-color: cyan;
+      }
+      .block-div div,
+      .flex-div div,
+      .inline-div div,
+      .inline-block-div div {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
+      .flex-div {
+        gap: 20px;
+        margin-top: 50px;
+        display: flex;
+        background-color: green;
+        width: 500px;
+        height: 500px;
+      }
+      .inline-div {
+        display: inline;
+        background-color: purple;
+
+        margin-top: 50px;
+      }
+      .inline-block-div {
+        display: inline-block;
+        background-color: yellow;
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <!--/ display: block; ელემენტები ამ property-value წყვილით
+<!--/ იკავებენ მთლიან თავისუფალ სიგრძეს და სიგანეს და ასევე თუ 
+<!--/ კონტენტი არ ეტევა კონტეინერში აბიჯებენ ხაზს ე.ი ქმნიან line break-ს -->
+    <div class="block-div">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!--\ display: flex;-ით html-ის ელემენტს გარდავქმნით 
+    <!--\ flex კონტეინერად, რომლის child ელემენტებიც 
+    <!--\ შეგვიძლია flexbox-ის დახმარებით განვალაგოთ -->
+    <div class="flex-div">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!--| display: inline;-ით გასტილული ელემენტი
+    <!--| იკავებს მხოლოდ იმდენ ადგილს რამდენსაც შიგნით
+    <!--| მოცემული კონტენტი და !არა ელემენტი! მოითხოვს 
+    <!--! არ ითვლება მის(ი) ჩაილდი/ჩაილდში ჩასმული კონტენტი 
+    <!--! width-ის და height-ის გაწერა არ შეგვიძლია-->
+    <div class="inline-div">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum
+      nam voluptatem non dolorem error ab! Nulla voluptatem harum quibusdam,
+      tempora minus placeat a, id quos dolorum nobis provident repellendus?Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Quas quaerat, omnis
+      est libero officia exercitationem culpa a consequatur quam, odio
+      consectetur temporibus porro esse recusandae iusto obcaecati dicta, natus
+      rerum.
+    </div>
+    <!--<> display: inline-block;-ს გააჩნია როგორც block-ის
+    <!--<> ასევე inline-ის თვისებები, ელემენტები იქცევიან ისე
+    <!--<> როგორც inline ელემენტები მაგრამ შეგვიძლია
+    <!--<> მივცეთ ზომა, პადინგი და მარჯინი -->
+    <div class="inline-block-div">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
