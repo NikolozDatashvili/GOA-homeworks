@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <input id="name" placeholder="name" /><br /><br />
+    <input id="age" placeholder="age" /><br /><br />
+    <input id="city" placeholder="city" /><br /><br />
+    <button onclick="saveData()">Save</button>
+    <button onclick="loadData()">Console</button>
+
+    <script>
+      function saveData() {
+        let data = {
+          name: document.getElementById("name").value,
+          age: document.getElementById("age").value,
+          city: document.getElementById("city").value,
+        };
+        if (
+          data.name.length !== 0 &&
+          data.city.length !== 0 &&
+          data.age.length !== 0
+        ) {
+          localStorage.setItem("userData", JSON.stringify(data));
+          alert("Data saved");
+        } else {
+          alert("Not enought data");
+        }
+      }
+
+      function loadData() {
+        let saved = JSON.parse(localStorage.getItem("userData"));
+        console.log(saved);
+        alert("Data can be viewed in console");
+      }
+    </script>
+  </body>
+</html>

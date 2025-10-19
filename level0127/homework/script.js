@@ -43,6 +43,7 @@
 //   .catch((error) => {
 //     console.log(error);
 //   });
+
 // //// თუ reject-ის მიუხედავად მაინც გვინდა მისი და დანარჩენი ორის handling-ი
 // Promise.allSettled([func2(), func2(), func2()])
 //   .then((success) => {
@@ -54,27 +55,27 @@
 
 // //| Task 3
 
-// function func3(num1, num2) {
-//   return new Promise((resolve, reject) => {
-//     let randomDelay = 1000 + Math.random() * 3000;
-//     setTimeout(() => {
-//       resolve(num1 + num2);
-//     }, randomDelay);
-//   });
-// }
+function func3(num1, num2) {
+  return new Promise((resolve, reject) => {
+    let randomDelay = 1000 + Math.random() * 3000;
+    setTimeout(() => {
+      resolve(num1 + num2);
+    }, randomDelay);
+  });
+}
 
-// Promise.all([func3(12, 6), func3(1, 6), func3(42, 11)])
-//   .then((result) => {
-//     console.log(result);
-//     return result;
-//   })
-//   .then((nums) => {
-//     let sum = 0;
-//     for (let i of nums) {
-//       sum += i;
-//     }
-//     console.log(sum);
-//   });
+Promise.all([func3(12, 6), func3(1, 6), func3(42, 11)])
+  .then((result) => {
+    console.log(result);
+    return result;
+  })
+  .then((nums) => {
+    let sum = 0;
+    for (let i of nums) {
+      sum += i;
+    }
+    console.log(sum);
+  });
 
 //\ Task 4
 
@@ -92,18 +93,18 @@
 
 //* Task 5
 
-function func5() {
-  return new Promise((resolve, reject) => {
-    if (Math.random() > 0.5) {
-      resolve("Higher number");
-    } else {
-      setTimeout(() => {
-        resolve("Lower number");
-      }, 2000);
-    }
-  });
-}
+// function func5() {
+//   return new Promise((resolve, reject) => {
+//     if (Math.random() > 0.5) {
+//       resolve("Higher number");
+//     } else {
+//       setTimeout(() => {
+//         resolve("Lower number");
+//       }, 2000);
+//     }
+//   });
+// }
 
-Promise.race([func5(), func5(), func5()]).then((msg) => {
-  console.log(msg);
-});
+// Promise.race([func5(), func5(), func5()]).then((msg) => {
+//   console.log(msg);
+// });

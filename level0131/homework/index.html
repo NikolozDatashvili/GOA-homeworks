@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+      input {
+        font-size: 20px;
+      }
+      label {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <div>
+        <label for="input1">User name</label>
+        <input type="text" id="input1" placeholder="Enter username" />
+      </div>
+      <div>
+        <label for="input2">Password</label>
+        <input type="text" id="input2" placeholder="Enter password" />
+      </div>
+    </div>
+    <button onclick="saveData()">Save Data</button>
+    <script src="script.js"></script>
+  </body>
+</html>
